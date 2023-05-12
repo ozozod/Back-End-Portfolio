@@ -32,6 +32,7 @@ com\portfolio\jd\Security\Repository\iUsuarioRepository.class
 com\portfolio\jd\Repository\RExperiencia.class
 com\portfolio\jd\JdApplication.class
 com\portfolio\jd\Security\Entity\UsuarioPrincipal.class
+WebConfig.class
 com\portfolio\jd\Repository\REducacion.class
 com\portfolio\jd\Security\MainSecurity.class
 com\portfolio\jd\Security\Service\UsuarioService.class
