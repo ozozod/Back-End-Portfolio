@@ -1,6 +1,10 @@
 package com.portfolio.jd.Controller;
 
 
+import com.portfolio.jd.Entity.Persona;
+import com.portfolio.jd.Security.Controller.Mensaje;
+import com.portfolio.jd.Service.ImpPersonaService;
+import com.portfolio.jd.dto.dtoPersona;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = {"","http://localhost:4200"})
+@CrossOrigin(origins = {"https://back-endjd.web.app/","http://localhost:4200"})
 public class PersonaController {
     @Autowired
     ImpPersonaService personaService;
