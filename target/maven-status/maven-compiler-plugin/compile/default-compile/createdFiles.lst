@@ -2,6 +2,7 @@ com\portfolio\jd\Entity\Experiencia.class
 com\portfolio\jd\Controller\PersonaController.class
 com\portfolio\jd\Security\Entity\Rol.class
 com\portfolio\jd\Security\jwt\JwtTokenFilter.class
+com\portfolio\jd\Controller\CProyectos.class
 com\portfolio\jd\Security\Service\RolService.class
 com\portfolio\jd\Security\Repository\iRolRepository.class
 com\portfolio\jd\dto\dtoHys.class
@@ -13,6 +14,7 @@ com\portfolio\jd\dto\dtoPersona.class
 com\portfolio\jd\Security\Controller\Mensaje.class
 com\portfolio\jd\Security\Enums\RolNombre.class
 com\portfolio\jd\Interface\IPersonaService.class
+com\portfolio\jd\Service\SProyectos.class
 com\portfolio\jd\Service\Seducacion.class
 com\portfolio\jd\Security\Dto\NuevoUsuario.class
 com\portfolio\jd\Security\Entity\Usuario.class
@@ -20,7 +22,8 @@ com\portfolio\jd\Security\jwt\JwtEntryPoint.class
 com\portfolio\jd\Service\ImpPersonaService.class
 com\portfolio\jd\Controller\CExperiencia.class
 com\portfolio\jd\dto\dtoEducacion.class
-com\portfolio\jd\Entity\hys.class
+com\portfolio\jd\Repository\RProyectos.class
+com\portafolio\mgb\dto\dtoProyectos.class
 com\portfolio\jd\Repository\IPersonaRepositoryy.class
 com\portfolio\jd\Service\Shys.class
 com\portfolio\jd\Controller\CHys.class
@@ -31,11 +34,14 @@ com\portfolio\jd\Security\Service\UserDetailsImpl.class
 com\portfolio\jd\Security\Repository\iUsuarioRepository.class
 com\portfolio\jd\Repository\RExperiencia.class
 com\portfolio\jd\JdApplication.class
+com\portfolio\jd\Entity\Proyectos.class
 com\portfolio\jd\Security\Entity\UsuarioPrincipal.class
 WebConfig.class
+com\portfolio\jd\Entity\Hys.class
 com\portfolio\jd\Repository\REducacion.class
 com\portfolio\jd\Security\MainSecurity.class
 com\portfolio\jd\Security\Service\UsuarioService.class
+com\portfolio\jd\Controller\CProyectos$ProyectosController.class
 com\portfolio\jd\Entity\Educacion.class
 com\portfolio\jd\dto\dtoExperiencia.class
 com\portfolio\jd\Entity\Persona.class
