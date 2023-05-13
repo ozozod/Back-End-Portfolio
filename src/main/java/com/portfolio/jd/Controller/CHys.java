@@ -1,7 +1,7 @@
 package com.portfolio.jd.Controller;
 
 
-import com.portfolio.jd.Entity.hys;
+import com.portfolio.jd.Entity.Hys;
 import com.portfolio.jd.Security.Controller.Mensaje;
 import com.portfolio.jd.Service.Shys;
 import com.portfolio.jd.dto.dtoHys;
@@ -29,17 +29,17 @@ public class CHys {
     Shys shys;
 
     @GetMapping("/lista")
-    public ResponseEntity<List<hys>> list() {
-        List<hys> list = shys.list();
+    public ResponseEntity<List<Hys>> list() {
+        List<Hys> list = shys.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
 
     @GetMapping("/detail/{id}")
-    public ResponseEntity<hys> getById(@PathVariable("id") int id) {
+    public ResponseEntity<Hys> getById(@PathVariable("id") int id) {
         if (!shys.existsById(id)) {
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         }
-        hys hYs = shys.getOne(id).get();
+        Hys hYs = shys.getOne(id).get();
         return new ResponseEntity(hYs, HttpStatus.OK);
     }
 
@@ -61,7 +61,7 @@ public class CHys {
             return new ResponseEntity(new Mensaje("Esa skill ya existe"), HttpStatus.BAD_REQUEST);
         }
 
-        hys hYs = new hys(dtohys.getNombre(), dtohys.getPorcentaje());
+        Hys hYs = new Hys(dtohys.getNombre(), dtohys.getPorcentaje());
         shys.save(hYs);
 
         return new ResponseEntity(new Mensaje("Skill agregada"), HttpStatus.OK);
@@ -83,7 +83,7 @@ public class CHys {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
 
-        hys hYs = shys.getOne(id).get();
+        Hys hYs = shys.getOne(id).get();
         hYs.setNombre(dtohys.getNombre());
         hYs.setPorcentaje(dtohys.getPorcentaje());
 

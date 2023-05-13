@@ -5,7 +5,7 @@
  */
 package com.portfolio.jd.Service;
 
-import com.portfolio.jd.Entity.hys;
+import com.portfolio.jd.Entity.Hys;
 import com.portfolio.jd.Repository.Rhys;
 import java.util.List;
 import java.util.Optional;
@@ -19,19 +19,19 @@ public class Shys {
     @Autowired
     Rhys rhys;
     
-    public List<hys> list(){
+    public List<Hys> list(){
         return rhys.findAll();
     }
     
-    public Optional<hys> getOne(int id){
+    public Optional<Hys> getOne(int id){
         return rhys.findById(id);
     }
     
-    public Optional<hys> getByNombre(String nombre){
+    public Optional<Hys> getByNombre(String nombre){
         return rhys.findByNombre(nombre);
     }
     
-    public void save(hys skill){
+    public void save(Hys skill){
         rhys.save(skill);
     }
     

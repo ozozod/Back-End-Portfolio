@@ -17,7 +17,7 @@ public class dtoHys {
     public dtoHys() {
     }
 
-    public dtoHys(String nombre, int porcentaje) {
+    public dtoHys(String nombre, int porcentaje, String img) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
     }
@@ -40,3 +40,5 @@ public class dtoHys {
     
     
 }
+
+    

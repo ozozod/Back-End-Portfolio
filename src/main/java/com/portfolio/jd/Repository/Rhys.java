@@ -5,7 +5,7 @@
  */
 package com.portfolio.jd.Repository;
 
-import com.portfolio.jd.Entity.hys;
+import com.portfolio.jd.Entity.Hys;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author Usuario
  */
-public interface Rhys extends JpaRepository<hys, Integer>{
-    Optional<hys> findByNombre(String nombre);
+public interface Rhys extends JpaRepository<Hys, Integer>{
+    Optional<Hys> findByNombre(String nombre);
     public boolean existsByNombre(String nombre);
 }
