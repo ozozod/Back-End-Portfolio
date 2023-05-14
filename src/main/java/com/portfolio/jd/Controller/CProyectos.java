@@ -34,7 +34,7 @@ public class CProyectos {
     
     @RestController
 @RequestMapping("/proyectos")
-@CrossOrigin(origins = {"https://front-end-jd.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://front-end-jd-fa540.web.app","http://localhost:4200"})
 public class ProyectosController {
     @Autowired
     SProyectos sProyectos;
