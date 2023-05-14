@@ -85,8 +85,8 @@ public class CExperiencia {
         Experiencia experiencia = sExperiencia.getOne(id).get();
         experiencia.setNombreE(dtoexp.getNombreE());
         experiencia.setDescripcionE((dtoexp.getDescripcionE()));
-        experiencia.setDescripcionE((dtoexp.getAnioI()));
-        experiencia.setDescripcionE((dtoexp.getAnioF()));
+        experiencia.setAnioI((dtoexp.getAnioI()));
+        experiencia.setAnioF((dtoexp.getAnioF()));
         
         sExperiencia.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
